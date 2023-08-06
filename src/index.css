@@ -1,3 +1,7 @@
+.link{
+  text-decoration: none;
+  color: inherit;
+}
 .Navbar{
   background-color: rgba(24, 105, 24, 0.688);
   display: flex;
@@ -19,7 +23,39 @@
   align-items: center;
   color: rgba(158, 58, 21, 0.841);
 }
-.greeting{
-  margin-top: 20px;
+.Card{
+  display: inline-block;
+  padding: 10px;
   text-align: center;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.contador{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pedido{
+  margin-top: 10px;
+}
+
+.img{
+  height: 24rem;
+}
+
+.cardStyle{
+  box-shadow: 0px 8px 10px rgba(158, 72, 6, 0.395);
+  transition: transform 0.3s ease;
+}
+
+.cardStyle:hover{
+  transform: translateY(-6px);
 }
