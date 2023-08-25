@@ -7,7 +7,7 @@ const Item = ({producto, descripcion, img, id, precio}) => {
   return (
     <div className='Card'>
     <Card style={{ width: '18rem', height:'34rem'}} className='cardStyle'>
-      <Card.Img src={img} className='img'/>
+      <Card.Img src={img} className='img' alt={producto}/>
       <Card.Body>
         <Card.Title>{producto}</Card.Title>
         <Card.Text>${precio} por porcion</Card.Text>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Nav, Navbar, NavDropdown, Row, Col } from 'react-bootstrap/';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap/';
 import CarWidget from './CarWidget';
 import { Link } from 'react-router-dom';
 
@@ -17,24 +17,19 @@ const NavBar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="">
-                            <Link to={'/contact'} className='link'>
-                                Contacto
-                            </Link>
-                            </Nav.Link>
                             <NavDropdown title="Catalogo" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="">
-                                <Link to={`/category/cat2`} className='link'>
-                                    Muffins
+                                <Link to={`/categoria/cat1`} className='link'>
+                                    Para Compartir
                                 </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="">
-                                <Link to={`/category/cat3`} className='link'>
+                                <Link to={`/categoria/cat2`} className='link'>
                                     Postres
                                 </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">
-                                <Link to={`/category/cat1`} className='link'>
+                                <Link to={`/categoria/cat3`} className='link'>
                                     Tartas
                                 </Link>
                                 </NavDropdown.Item>

@@ -10,7 +10,7 @@ const ItemList = ({catProducts}) => {
         return(
           <Item
             key={p.id}
-            id={p.id}
+            id={p.producto}
             producto={p.producto}
             descripcion={p.descripcion}
             img={p.url}
